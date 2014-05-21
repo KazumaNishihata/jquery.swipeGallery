@@ -1,4 +1,15 @@
 @charset "UTF-8";
+/*!--------------------------------------------------------------------------*
+ *  
+ *  jquery.swipeGallery.js 1.0.0
+ *  
+ *  MIT-style license. 
+ *  
+ *  2014 Kazuma Nishihata 
+ *  http://www.to-r.net
+ *  
+ *--------------------------------------------------------------------------*/
+
 .swipeGallery{
 	position: relative;
 }
