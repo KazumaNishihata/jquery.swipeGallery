@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery.swipeGallery.js sample</title>
+	<link rel="stylesheet" href="../jquery.swipeGallery.css">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="../jquery.swipeGallery.js"></script>
+	<meta name="viewport" content="width=device-width">
+	<style>
+*{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+pre {
+	width: auto;
+	margin: 10px;
+	overflow: auto;
+	border: 1px #cccccc solid;
+	background: #eeeeee;
+	padding: 1em;
+	font-size: small;
+}
+	</style>
+</head>
+<body>
+<div id="swipeGallery01" class="swipeGallery">
+	<div class="swipeGallery_viewport">
+		<div class="swipeGallery_inner">
+			<ul>
+				<li data-page="1" class="swipeGallery_slide"><a href="http://blog.webcreativepark.net/"><img src="./img/photo1.jpg"></a></li>
+				<li data-page="2" class="swipeGallery_slide"><a href="http://blog.webcreativepark.net/"><img src="./img/photo2.jpg"></a></li>
+				<li data-page="3" class="swipeGallery_slide"><a href="http://blog.webcreativepark.net/"><img src="./img/photo3.jpg"></a></li>
+				<li data-page="4" class="swipeGallery_slide"><a href="http://blog.webcreativepark.net/"><img src="./img/photo4.jpg"></a></li>
+			</ul>
+		</div>
+	</div>
+	<ul class="swipeGallery_paging"></ul>
+</div>
+<pre><code>$(window).load(function(){
+	$("#swipeGallery01").swipeGallery();
+});</code></pre>
+<script>
+$(window).load(function(){
+	$("#swipeGallery01").swipeGallery();
+});
+</script>
+<div id="swipeGallery02" class="swipeGallery">
+	<div class="swipeGallery_viewport">
+		<div class="swipeGallery_inner">
+			<ul>
+				<li data-page="1" class="swipeGallery_slide"><a href="http://blog.webcreativepark.net/"><img src="./img/photo1.jpg"></a></li>
+				<li data-page="2" class="swipeGallery_slide"><a href="http://blog.webcreativepark.net/"><img src="./img/photo2.jpg"></a></li>
+				<li data-page="3" class="swipeGallery_slide"><a href="http://blog.webcreativepark.net/"><img src="./img/photo3.jpg"></a></li>
+				<li data-page="4" class="swipeGallery_slide"><a href="http://blog.webcreativepark.net/"><img src="./img/photo4.jpg"></a></li>
+			</ul>
+		</div>
+	</div>
+	<ul class="swipeGallery_paging"></ul>
+	<a href="#" class="swipeGallery_prev">prev</a>
+	<a href="#" class="swipeGallery_next">next</a>
+</div>
+<pre><code>$(window).load(function(){
+	$("#swipeGallery02").swipeGallery({
+		next:".swipeGallery_next",
+		prev:".swipeGallery_prev"
+	});
+});</code></pre>
+<script>
+$(window).load(function(){
+	$("#swipeGallery02").swipeGallery({
+		next:".swipeGallery_next",
+		prev:".swipeGallery_prev"
+	});
+});
+</script>
+</body>
+</html>
