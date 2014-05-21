@@ -77,10 +77,6 @@ $.fn.swipeGallery = function(op){
 						self.$inner.append($(this).clone());
 					});
 				}
-				// setTimeout(function(){
-				// 	$this.find(op.slide).addClass("loaded");
-				// },1);
-
 				//set slide width
 				self.setWidth();
 				//set prev img
