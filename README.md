@@ -5,23 +5,23 @@ jQuery swipte gallery
 
 include this plugin after jQuery
 
-`
+```
 <script src="jquery.js"></script>
 <script src="jquery.swipeGallery.js"></script>
-`
+```
 
 include this plugin CSS file
 
-`
+```
 <link rel="stylesheet" href="jquery.swipeGallery.css">
-`
+```
 execute `swipeGallery()`
 
-`
+```
 $(window).load(function(){
 	$("#swipeGallery01").swipeGallery();
 });
-`
+```
 
 options
 -------------------
