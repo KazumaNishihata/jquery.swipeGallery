@@ -79,6 +79,8 @@ $.fn.swipeGallery = function(op){
 				}
 				//set slide width
 				self.setWidth();
+				//set slide width
+				self.setHeight();
 				//set prev img
 				self.setPrevImage();
 				//set location
@@ -108,6 +110,11 @@ $.fn.swipeGallery = function(op){
 				//default position
 				self.defaultLeft = width;
 				self.$inner.css("transform","translate3d(-"+self.defaultLeft+"px,0,0)")
+			},
+			setHeight: function () {
+				var self   = this;
+				var height = self.$inner.find('li').height();
+				self.$inner.height(height);
 			},
 			setPaging : function(){
 				var html="";
@@ -272,6 +279,7 @@ $.fn.swipeGallery = function(op){
 			resize :function(){
 				if(!this.swipeFlag){
 					this.setWidth();
+					this.setheight();
 				}
 			}
 		}).init();
